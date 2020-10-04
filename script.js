@@ -81,7 +81,6 @@ function frame() {
 		Submit();
 		quizOver=1;
 		alert("Congratulations you scored"+result+"out of 15 !!!");
-		// Showquestion(currentq);
 
 	} else {
 		width++;
@@ -154,10 +153,10 @@ function Saveandnext(){
 function score(){
 	for(let q=0;q<numberofquestions;q++){
 		if(choiceselected[q]===ans[q]){
-			result+=3;
+			result=result+3;
 		}
 		else if(choiceselected[q]!=0){
-			result-=1;
+			result=result-1;
 		}
 	}
 }
